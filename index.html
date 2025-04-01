@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Livraria Cultura</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="topo">
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <h1>Livraria Cultura</h1>
+
+        <div class="barra-pesquisa">
+            <input type="text" placeholder="Faça sua pesquisa...">
+        </div>
+    </div>
+
+    <div class="menu" id="menu">
+        <a href="#">Livros</a>
+        <a href="#">eBooks</a>
+        <a href="#">Infantil</a>
+        <a href="#">Outras categorias</a>
+        <a href="#">Vale presente</a>
+        <a href="#">Cultura pass</a>
+    </div>
+
+    <hr>
+
+    <div class="opc">
+        <p>
+            <span>Atendimento e televendas</span> &#x02223;
+            <span>Atendimento Empresas</span> &#x02223;
+            <span>Sebo Cultura</span> &#x02223;
+            <span>Cultura Pass</span>
+        </p>
+    </div>
+
+    <div class="opc2">
+        <p>
+            <span>Literatura Brasileira</span> &#x02223;
+            <span>Literatura Internacional</span> &#x02223;
+            <span>Infantojuvenis</span> &#x02223;
+            <span>Autoajuda</span> &#x02223;
+            <span>Biografias</span> &#x02223;
+            <span>HQs</span> &#x02223;
+            <span>Negócios</span> &#x02223;
+            <span>Novidades</span> &#x02223;
+            <span>Mais Vendidos</span>
+        </p>
+    </div>
+
+    <hr>
+
+    <h2>Explore a Cultura</h2>
+    <div class="slider-container">
+        <button class="seta esquerda" onclick="mudarSlide(-1)">&#9664;</button>
+
+        <div class="imagens" id="imagens">
+            <div class="grupo grupo1">
+                <img src="imagens\Avatar1.png" alt="Imagem A" class="imagem">
+                <img src="imagens\Avatar2.png" alt="Imagem B" class="imagem">
+                <img src="imagens\Avatar3.png" alt="Imagem C" class="imagem">
+            </div>
+
+            <div class="grupo grupo2" style="display: none;">
+                <img src="imagens\Avatar2.png" alt="Imagem D" class="imagem">
+                <img src="imagens\Avatar3.png" alt="Imagem E" class="imagem">
+                <img src="imagens\Avatar1.png" alt="Imagem F" class="imagem">
+            </div>
+        </div>
+
+        <button class="seta direita" onclick="mudarSlide(1)">&#9654;</button>
+    </div>
+    <div class="alinhamento">
+        <h3>Destaques do mês</h3>
+    </div>
+    <div class="alinhamento">
+    <div class="livro-card">
+        <div class="livro-imagem">
+            <img src="imagens\livro.png" alt="Imagem de livro" class="livro">
+            <div class="editora">Editora Exemplo1</div>
+        </div>
+        <div class="livro-info">
+            <div class="livro-titulo">Exemplo De Título Volume: I</div>
+            <div class="livro-preco">R$ 23,90</div>
+            <a href="#" class="comprar-btn">COMPRAR</a>
+        </div>
+    </div>
+    <div class="livro-card">
+        <div class="livro-imagem">
+            <img src="imagens\livro.png" alt="Imagem de livro2" class="livro">
+            <div class="editora">Editora Exemplo2</div>
+        </div>
+        <div class="livro-info">
+            <div class="livro-titulo">Exemplo De Título Volume: II</div>
+            <div class="livro-preco">R$ 19,90</div>
+            <a href="#" class="comprar-btn">COMPRAR</a>
+        </div>
+    </div>
+    <div class="livro-card">
+        <div class="livro-imagem">
+            <img src="imagens\livro.png" alt="Imagem de livro3" class="livro">
+            <div class="editora">Editora Exemplo3</div>
+        </div>
+        <div class="livro-info">
+            <div class="livro-titulo">Outro exemplo de título</div>
+            <div class="livro-preco">R$ 41,99</div>
+            <a href="#" class="comprar-btn">COMPRAR</a>
+        </div>
+    </div>
+        <div class="livro-card">
+        <div class="livro-imagem">
+            <img src="imagens\livro.png" alt="Imagem de livro4" class="livro">
+            <div class="editora">Editora Exemplo4</div>
+        </div>
+        <div class="livro-info">
+            <div class="livro-titulo">Exemplo De Título a volta</div>
+            <div class="livro-preco">R$ 53,90</div>
+            <a href="#" class="comprar-btn">COMPRAR</a>
+        </div>
+    </div>
+        <div class="livro-card">
+        <div class="livro-imagem">
+            <img src="imagens\livro.png" alt="Imagem de livro5" class="livro">
+            <div class="editora">Editora Exemplo5</div>
+        </div>
+        <div class="livro-info">
+            <div class="livro-titulo">Exemplo De Título: Versão Deluxe</div>
+            <div class="livro-preco">R$ 69,90</div>
+            <a href="#" class="comprar-btn">COMPRAR</a>
+        </div>
+    </div>
+    </div>
+    <div>
+        <div class ="alinhamento">
+        <h3>Quadrinhos</h3>
+        </div>
+    <div class="alinhamento">
+    <div class="livro-card">
+        <div class="livro-imagem">
+            <img src="imagens\hq.png" alt="Imagem de livro" class="livro">
+            <div class="editora">Marviu</div>
+        </div>
+        <div class="livro-info">
+            <div class="livro-titulo">Exemplo De Título Volume: I</div>
+            <div class="livro-preco">R$ 23,90</div>
+            <a href="#" class="comprar-btn">COMPRAR</a>
+        </div>
+    </div>
+    <div class="livro-card">
+        <div class="livro-imagem">
+            <img src="imagens\hq.png" alt="Imagem de livro2" class="livro">
+            <div class="editora">Descer Comicos</div>
+        </div>
+        <div class="livro-info">
+            <div class="livro-titulo">Exemplo De Título Volume: II</div>
+            <div class="livro-preco">R$ 19,90</div>
+            <a href="#" class="comprar-btn">COMPRAR</a>
+        </div>
+    </div>
+    <div class="livro-card">
+        <div class="livro-imagem">
+            <img src="imagens\hq.png" alt="Imagem de livro3" class="livro">
+            <div class="editora">Descer Comicos</div>
+        </div>
+        <div class="livro-info">
+            <div class="livro-titulo">Outro exemplo de título</div>
+            <div class="livro-preco">R$ 41,99</div>
+            <a href="#" class="comprar-btn">COMPRAR</a>
+        </div>
+    </div>
+        <div class="livro-card">
+        <div class="livro-imagem">
+            <img src="imagens\hq.png" alt="Imagem de livro4" class="livro">
+            <div class="editora">Marviu</div>
+        </div>
+        <div class="livro-info">
+            <div class="livro-titulo">Exemplo De Título a volta</div>
+            <div class="livro-preco">R$ 53,90</div>
+            <a href="#" class="comprar-btn">COMPRAR</a>
+        </div>
+    </div>
+        <div class="livro-card">
+        <div class="livro-imagem">
+            <img src="imagens\hq.png" alt="Imagem de livro5" class="livro">
+            <div class="editora">Marviu</div>
+        </div>
+        <div class="livro-info">
+            <div class="livro-titulo">Exemplo De Título: Versão Deluxe</div>
+            <div class="livro-preco">R$ 69,90</div>
+            <a href="#" class="comprar-btn">COMPRAR</a>
+        </div>
+    </div>
+    </div>
+    </div>
+
+        <div class="opc2">
+        <p>
+            <span>REDES SOCIAIS: </span>
+            <span> Facebook </span>
+            <span> Instagram </span>
+            <span> Youtube </span>
+            <span> Tiktok </span>
+        </p>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            menu.style.display = (menu.style.display === "block") ? "none" : "block";
+        }
+
+        let grupoAtivo = 1;
+
+        function mudarSlide(direcao) {
+            let grupo1 = document.querySelector('.grupo1');
+            let grupo2 = document.querySelector('.grupo2');
+
+            if (direcao === 1) {
+                grupo1.style.display = "none";
+                grupo2.style.display = "flex";
+            } else {
+                grupo1.style.display = "flex";
+                grupo2.style.display = "none";
+            }
+        }
+
+    </script>
+
+</body>
+</html>

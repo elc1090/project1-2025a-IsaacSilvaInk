@@ -1,0 +1,261 @@
+body {
+            font-family: Verdana, Arial , sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .topo {
+            background-color: #7FDBFF;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2em;
+            color: #fff;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            color: #000;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .alinhamento {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 150px;
+        }
+
+        h3{
+            font-size: 1.4em;
+            color: #000;
+            margin: 0;
+            text-align: center;
+        }
+
+        .menu-icon {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .menu-icon:hover {
+            background-color: #48D1CC;
+            border-radius: 5px;
+        }
+
+        .menu-icon div {
+            width: 30px;
+            height: 4px;
+            background-color: white;
+            margin: 6px 0;
+            border-radius: 2px;
+        }
+
+        .menu {
+            display: none;
+            position: absolute;
+            top: 60px;
+            left: 20px;
+            background-color: white;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .menu a {
+            display: block;
+            padding: 10px;
+            color: black;
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            background-color: #7FDBFF;
+            color: white;
+        }
+
+        .barra-pesquisa {
+            margin-top: 20px;
+        }
+
+        .barra-pesquisa input {
+            width: 400px;
+            padding: 5px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .opc {
+            background-color: #48D1CC;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .opc span {
+            color: black;
+            cursor: pointer;
+            padding: 0 5px;
+        }
+
+        .opc span:hover {
+            color: white;
+        }
+
+        .opc2 {
+            background-color: #B0C4DE;
+            padding: 0.5px;
+            text-align: center;
+        }
+
+        .opc2 span {
+            color: white;
+            cursor: pointer;
+            padding: 0 5px;
+        }
+
+        .opc2 span:hover {
+            color: black;
+        }
+
+        .slider-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .imagens {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .imagem {
+            display: inline-block;
+            margin: 10px;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            opacity: 0;
+            transform: translateX(-100px);
+            animation: slideIn 1s forwards ease-out;
+        }
+
+        .livro{
+            display: inline-block;
+            margin: 10px;
+            width: 200px;
+            height: 200px;
+            opacity: 0;
+            transform: translateX(-100px);
+            animation: slideIn 1s forwards ease-out;
+        }
+
+        .imagem:nth-child(2) { animation-delay: 0.3s; }
+        .imagem:nth-child(3) { animation-delay: 0.6s; }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .seta {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            font-size: 24px;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 2;
+            border-radius: 50%;
+        }
+
+        .seta:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .esquerda { left: 10px; }
+        .direita { right: 10px; }
+
+        .livro-card {
+            width: 200px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .livro-imagem {
+            position: relative;
+        }
+
+        .livro-imagem img {
+            width: 100%;
+            display: block;
+        }
+
+        .editora {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            color: white;
+            font-size: 12px;
+            padding: 5px;
+            text-transform: uppercase;
+        }
+
+        .livro-info {
+            padding: 10px;
+        }
+
+        .livro-titulo {
+            font-weight: bold;
+            color: #333;
+            margin: 5px 0;
+        }
+
+        .livro-preco {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            margin: 5px 0;
+        }
+
+        .comprar-btn {
+            display: block;
+            width: 100%;
+            background-color: #00a6ff;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 0 0 8px 8px;
+            transition: background-color 0.3s;
+        }
+
+        .comprar-btn:hover {
+            background-color: #0080cc;
+        }
